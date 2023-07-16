@@ -7,7 +7,7 @@ node {
      sh "echo '${gitcommit}'"
    }
    stage('test') {
-     nodejs(nodeJSInstallationName: 'nodejs') {
+     nodejs(nodeJSInstallationName: 'NodeJs') {
        sh 'npm install --only=dev'
        sh 'npm test'
      }
